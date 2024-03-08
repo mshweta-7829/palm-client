@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: rgb(18, 18, 18);
   height:100vh;
   display: flex;
   flex-direction: column;
+  width:100%
   
 }
 
@@ -19,22 +20,54 @@
 
 .footer{
   display: flex;
-  align-items: flex-end;
-  background-color: "#222";
-  padding: 10px;
+  flex-direction: row;
+  padding: 10px;  
+  background-color: #252424; 
 }
 
 .prompt{
-  margin:0;
   flex-grow: 1;
   overflow-y: hidden;
-  width : 70%
+  border:none;
+  padding: 10px;
+  background-color: #4c4949;
+  color:white
 }
 
 .btn{
-  width : 30%;
-  margin: 0;
-  flex: 1;
-  margin-left: 10px;
-  height: 30px
+  border:none;
+  padding: 10px;
+  color: white;
+  background-color: #0b70bdcb;
 }
+
+.resp-container{
+  display: flex;
+  flex-direction: column;
+  width:calc(100vh - 200px);
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.response{
+  color: white;
+  margin: 5px;
+  background-color: rgb(36, 36, 37);
+  line-height: 2rem;
+  border-radius: 5px;
+  padding:5px;
+  min-width: 500px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon{
+  margin: 2px;
+}
+
+
